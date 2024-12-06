@@ -59,6 +59,10 @@ nav a{
     color: white;
 }
 
+nav a:active{
+    background-color: rgba(14, 56, 0, 0.41);
+}
+
 nav li:first-child{
     margin-right: auto;
 }
@@ -94,4 +98,8 @@ section{
 
 footer{
     background-color: #3C593E;
+}
+
+summary{
+    cursor: pointer;
 }
