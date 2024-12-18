@@ -17,15 +17,15 @@ function openMenu(){
 // LAAT HARRY DRAAIEN
 
 // selecteert het element wat aangesproken moet worden
-let rotateSection = document.querySelector('.harry')
+let rotate = document.querySelector('.harry')
 
 // voegt een funnctie toe die moet gebeuren bij het klikken
-rotateSection.addEventListener('click', sectionRotate)
+rotate.addEventListener('click', harryRotate)
 
 // vertelt wat de functie moet zijn (harry laten draaien met keyframes)
-function sectionRotate() {
-  rotateSection.classList.toggle('rotate')
+function harryRotate() {
+  rotate.classList.toggle('rotate')
 }
 
 // zorgt dat de class die is toegevoegd eraf gaat als de animatie klaar is
-rotateSection.addEventListener('animationend', sectionRotate)
+rotate.addEventListener('animationend', harryRotate)
